@@ -97,9 +97,8 @@ button {
 
 button:hover .transition {
     width: 9.33em;
-
     height: 9.33em;
-  
+
 }
 
 button:active {
@@ -111,21 +110,20 @@ button:active {
 @media screen and (max-width: 768px) {
     button {
         padding: 0.125em 0.375em;
-        
+
         font-size: 7.5px;
-       
+
     }
 
     .gradient {
         margin-top: -0.3em;
-        
+
     }
 
     button:hover .transition {
-        width: 1.6675;
-       
-        height: 1.6675;
-       
+        width: 1.6675em;
+        height: 1.6675em;
+
     }
 }
 
@@ -142,6 +140,14 @@ button:active {
 }
 
 .image-main {
+    flex: 0 0 auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.image-other {
     flex: 0 0 auto;
     max-width: 50%;
     height: auto;
@@ -177,6 +183,16 @@ footer {
     }
 
     .image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-other {
+        flex-direction: column-reverse;
         width: 100%;
         max-width: 100%;
         height: auto;

@@ -1,0 +1,243 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ACA7CB;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.header-image {
+    width: 300px;
+    height: auto;
+}
+
+.dropdown {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    right: 5%;
+    top: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/*Den Button habe ich von https://uiverse.io/buttons?page=1*/
+button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 0.67em 1.8em;
+    /* Anpassung: Breite und Höhe des Buttons */
+    font-weight: 500;
+    background: #1F2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.17em;
+    /* Anpassung: Höhe des Gradienten */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.label {
+    position: relative;
+    top: -1px;
+}
+
+.transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: #474554;
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+    width: 9.33em;
+
+    height: 9.33em;
+  
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    button {
+        padding: 0.125em 0.375em;
+        
+        font-size: 7.5px;
+       
+    }
+
+    .gradient {
+        margin-top: -0.3em;
+        
+    }
+
+    button:hover .transition {
+        width: 1.6675;
+       
+        height: 1.6675;
+       
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: radial-gradient(#FFFFFF, #cdc9c9);
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+}
+
+.image-main {
+    flex: 0 0 auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.text {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #474554;
+    padding: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #ACA7CB;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+.image-models {
+    width: 235%;
+    height: auto;
+}
+
+.text-models {
+    background-color: #474554;
+    padding: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+rounded-image {
+    border-radius: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #474554;
+    border-radius: 5px;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details>p {
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
